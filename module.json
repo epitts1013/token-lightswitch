@@ -1,0 +1,29 @@
+{
+  "id": "token-lightswitch",
+  "title": "Token Lightswitch",
+  "description": "Adds light toggle buttons to the token UI on a right-click",
+  "authors": [
+    {
+      "name": "SuperSparky"
+    }
+  ],
+  "version": "1.0.0",
+  "url": "",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "esmodules": [
+    "scripts/token-lightswitch.js"
+  ],
+  "styles": [
+    "styles/token-lightswitch.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ]
+}
