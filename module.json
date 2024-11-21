@@ -15,8 +15,7 @@
     "minimum": "12",
     "verified": "12"
   },
-  "esmodules": [
-    "scripts/module.js",
+  "scripts": [
     "scripts/token-lightswitch.js"
   ],
   "styles": [
