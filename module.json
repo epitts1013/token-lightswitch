@@ -8,12 +8,15 @@
     }
   ],
   "version": "1.0.0",
-  "url": "",
+  "url": "https://github.com/epitts1013/token-lightswitch",
+  "license": "LICENSE",
+  "readme": "README",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
   },
   "esmodules": [
+    "scripts/module.js",
     "scripts/token-lightswitch.js"
   ],
   "styles": [

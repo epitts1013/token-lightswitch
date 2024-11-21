@@ -1,0 +1,10 @@
+{
+  "TOKEN-LIGHTSWITCH": {
+    "HUD": {
+      "tooltips": {
+        "light-spell": "Toggle Light Cantrip",
+        "torch": "Toggle Torch"
+      }
+    }
+  }
+}

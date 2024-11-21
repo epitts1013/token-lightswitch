@@ -1,0 +1,9 @@
+#token-hud .col.very-left {
+  top: -55px;
+  left: -115px;
+  justify-content: center;
+}
+
+.placeable-hud .control-icon.light-active {
+  border: 1px solid #ef8f27;
+}
