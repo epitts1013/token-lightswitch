@@ -21,11 +21,16 @@ class TokenLightswitch {
         "light.bright": 20,
         "light.animation.type": "pulse",
         "light.animation.intensity": 2,
-        "light.color": 13236986,
-        "light.alpha": 0.3
+        "light.color": Color.fromString('#5b7171'),
+        "light.alpha": 0.7
       },
       torch: {
-
+        "light.dim": 40, 
+        "light.bright": 20,
+        "light.animation.type": "flame",
+        "light.animation.intensity": 3,
+        "light.color": Color.fromString('#a2642a'),
+        "light.alpha": 0.7
       },
       off: {
         "light.dim": 0, 
