@@ -10,7 +10,7 @@
   "version": "1.0.0",
   "url": "https://github.com/epitts1013/token-lightswitch",
   "license": "LICENSE",
-  "readme": "README",
+  "readme": "README.md",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
