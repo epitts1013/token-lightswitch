@@ -70,6 +70,7 @@ class TokenLightswitch {
 }
 
 Hooks.on("renderTokenHUD", (hud, html) => {
+  html = $(html);
   const lightsColumnDiv = $('<div class="col very-left"></div>');
 
   const currentLightType = hud.object.document.getFlag(
@@ -78,7 +79,7 @@ Hooks.on("renderTokenHUD", (hud, html) => {
   );
 
   lightsColumnDiv.append(`
-    <div 
+    <button 
       class="control-icon ${
         currentLightType === TokenLightswitch.CONSTANTS.LIGHT_CANTRIP
           ? 'light-active'
@@ -90,11 +91,11 @@ Hooks.on("renderTokenHUD", (hud, html) => {
       id="${TokenLightswitch.CONSTANTS.LIGHT_CANTRIP}"
     >
       <i class="fa-regular fa-brightness"></i>
-    </div>
+    </button>
   `);
 
   lightsColumnDiv.append(`
-    <div 
+    <button 
       class="control-icon ${
         currentLightType === TokenLightswitch.CONSTANTS.TORCH
           ? 'light-active'
@@ -106,12 +107,12 @@ Hooks.on("renderTokenHUD", (hud, html) => {
       id="${TokenLightswitch.CONSTANTS.TORCH}"
     >
       <i class="fa-regular fa-fire"></i>
-    </div>
+    </button>
   `);
 
   html.prepend(lightsColumnDiv);
 
-  html.on("click", ".control-icon", async (event) => {
+  lightsColumnDiv.on("click", ".control-icon", async (event) => {
     const eventTarget = $(event.currentTarget);
     const data = eventTarget?.data();
 
